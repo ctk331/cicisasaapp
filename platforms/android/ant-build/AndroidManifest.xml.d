@@ -1,2 +1,2 @@
-/Users/takang/cordova/cicisasaapp/platforms/android/ant-build/AndroidManifest.xml : \
-/Users/takang/cordova/cicisasaapp/platforms/android/AndroidManifest.xml \
+c:\Users\Takang\Documents\GitHub\cicisasaapp\platforms\android\ant-build\AndroidManifest.xml : \
+c:\Users\Takang\Documents\GitHub\cicisasaapp\platforms\android\AndroidManifest.xml \

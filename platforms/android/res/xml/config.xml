@@ -8,7 +8,7 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
-    <name>app01</name>
+    <name>cicisasa</name>
     <description>
         An Ionic Framework and Cordova project.
     </description>
@@ -16,6 +16,7 @@
       Ionic Framework Team
     </author>
     <content src="index.html" />
+    <icon src="cicisasaicon.png" />
     <access origin="*" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />

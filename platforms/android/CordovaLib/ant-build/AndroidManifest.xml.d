@@ -1,2 +1,2 @@
-/Users/takang/cordova/cicisasaapp/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
-/Users/takang/cordova/cicisasaapp/platforms/android/CordovaLib/AndroidManifest.xml \
+C:\Users\Takang\Documents\GitHub\cicisasaapp\platforms\android\CordovaLib\ant-build\AndroidManifest.xml : \
+C:\Users\Takang\Documents\GitHub\cicisasaapp\platforms\android\CordovaLib\AndroidManifest.xml \

@@ -6,6 +6,7 @@ App.controller("AppCtrl", ["$scope", "activity", "$log", AppCtrl]);
 
 function AppCtrl($scope, activity, $log) {
 	$scope.artworks = [];
+
 	$scope.refresh = function() {
 		activity.getBoardactivity($scope);
 	}
