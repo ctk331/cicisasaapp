@@ -1,0 +1,15 @@
+2015-01-20 16:44:07.392 app01[3714:548580] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/takang/Library/Developer/CoreSimulator/Devices/E94CD9B6-D49D-47B7-976C-EBEF87DB1C9C/data/Containers/Data/Application/AF3725A8-3376-4419-9021-171AF7724A79/Library/Cookies/Cookies.binarycookies
+2015-01-20 16:44:08.308 app01[3714:548580] Apache Cordova native platform version 3.7.0 is starting.
+2015-01-20 16:44:08.308 app01[3714:548580] Multi-tasking -> Device: YES, App: YES
+2015-01-20 16:44:08.348 app01[3714:548580] Unlimited access to network resources
+2015-01-20 16:44:09.253 app01[3714:548580] [CDVTimer][keyboard] 0.104010ms
+2015-01-20 16:44:09.253 app01[3714:548580] [CDVTimer][TotalPluginStartup] 0.387013ms
+2015-01-20 16:44:10.486 app01[3714:548580] Resetting plugins due to page load.
+2015-01-20 16:44:10.976 app01[3714:548580] Finished load of: file:///Users/takang/Library/Developer/CoreSimulator/Devices/E94CD9B6-D49D-47B7-976C-EBEF87DB1C9C/data/Containers/Bundle/Application/BEA569B7-B48A-4349-914F-73CD91665FC5/app01.app/www/index.html
+2015-01-20 17:17:31.892 app01[4317:807484] Apache Cordova native platform version 3.7.0 is starting.
+2015-01-20 17:17:31.894 app01[4317:807484] Multi-tasking -> Device: YES, App: YES
+2015-01-20 17:17:31.896 app01[4317:807484] Unlimited access to network resources
+2015-01-20 17:17:32.212 app01[4317:807484] [CDVTimer][keyboard] 0.081003ms
+2015-01-20 17:17:32.212 app01[4317:807484] [CDVTimer][TotalPluginStartup] 0.275970ms
+2015-01-20 17:17:32.930 app01[4317:807484] Resetting plugins due to page load.
+2015-01-20 17:17:33.305 app01[4317:807484] Finished load of: file:///Users/takang/Library/Developer/CoreSimulator/Devices/E94CD9B6-D49D-47B7-976C-EBEF87DB1C9C/data/Containers/Bundle/Application/7BD2F74A-89D4-4ECC-9181-B571274F8F34/app01.app/www/index.html
