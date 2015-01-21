@@ -11,35 +11,46 @@
 	<script src="js/app.js"></script>
   </head>
   <body data-ng-controller="AppCtrl">
-	<ion-header-bar align-title="center" class="bar-balanced">
-	  <!--
-	  <div class="buttons">
-		<button class="button" ng-click="doSomething()">Left Button</button>
-	  </div>
-	  -->
-		<h1 class="title">Cicisasa</h1>
-		<button class="button" data-ng-click="refresh()">
-			<i class="icon ion-refresh"></i>
-		</button>
-	  <!--
-	  <div class="buttons">
-		<button class="button">Right Button</button>
-	  </div>
-	  -->
-	</ion-header-bar>
-	<ion-content>
-		<div class="card list" data-ng-repeat="a in artworks | orderBy:['-timestamp']">
-			<div class="item item-avatar-left">
-				<img data-ng-src="http://cagdev.104tw.org/images/user/avatar/{{a.headPhotoPath}}/{{a.headPhoto}}">
-				<H2>{{a.from}}</H2>
-				<p>{{a.loc}}</P>
-			</div>
-			<div class="item item-body">
-				<H1>{{a.subject}}</H1>
-				<H2>{{a.desc}}</H2>
-				<img data-ng-src="http://cagdev.104tw.org/images/user/upload/{{a.media.filepath}}/{{a.media.filename}}">
-			</div>
-		</div>
-	</ion-content>
+	<ion-side-menus>
+		<ion-side-menu-content>
+			<ion-header-bar align-title="center" class="bar-balanced">
+				<div class="buttons">
+					<button class="button icon button-clear ion-navicon-round" data-ng-click="toggleLeft()">
+					</button>
+				</div>
+				<h1 class="title">Cicisasa</h1>
+				<button class="button" data-ng-click="refresh()">
+					<i class="icon ion-refresh"></i>
+				</button>
+			</ion-header-bar>
+			<ion-content>
+				<ion-refresher on-refresh="refresh()"></ion-refresher>
+				<div class="card list" data-ng-repeat="a in artworks | orderBy:['-timestamp']">
+					<div class="item item-avatar-left">
+						<img data-ng-src="http://cagdev.104tw.org/images/user/avatar/{{a.headPhotoPath}}/{{a.headPhoto}}">
+						<H2>{{a.from}}</H2>
+						<p>{{a.loc}}</P>
+					</div>
+					<div class="item item-body">
+						<H1>{{a.subject}}</H1>
+						<H2>{{a.desc}}</H2>
+						<img data-ng-src="http://cagdev.104tw.org/images/user/upload/{{a.media.filepath}}/{{a.media.filename}}">
+					</div>
+				</div>
+			</ion-content>
+		</ion-side-menu-content>
+		<ion-side-menu side="left">
+			<ion-list>
+				<ion-item>Home</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>上傳作品</ion-item>
+			</ion-list>
+			<ion-list>
+				<ion-item>上傳語音導覽</ion-item>
+			</ion-list>
+		</ion-side-menu>
+	</ion-side-menus>
+		
   </body>
 </html>

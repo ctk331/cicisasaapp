@@ -2,13 +2,17 @@ var App = angular.module("cicisasa", ["ionic"]);
 
 App.service("activity", ["$http", "$log", activity]);
 
-App.controller("AppCtrl", ["$scope", "activity", "$log", AppCtrl]);
+App.controller("AppCtrl", ["$scope", "$ionicSideMenuDelegate" , "activity", "$log", AppCtrl]);
 
-function AppCtrl($scope, activity, $log) {
+function AppCtrl($scope, $ionicSideMenuDelegate, activity, $log) {
 	$scope.artworks = [];
 
 	$scope.refresh = function() {
 		activity.getBoardactivity($scope);
+	}
+	
+	$scope.toggleLeft = function() {
+		$ionicSideMenuDelegate.toggleLeft()
 	}
 }
 

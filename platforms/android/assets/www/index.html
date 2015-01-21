@@ -12,20 +12,11 @@
   </head>
   <body data-ng-controller="AppCtrl" class="platform-android platform-cordova platform-webview">
 	<ion-header-bar align-title="center" class="bar-balanced">
-	  <!--
-	  <div class="buttons">
-		<button class="button" ng-click="doSomething()">Left Button</button>
-	  </div>
-	  -->
+		<button class="butoon icon button-clear ion-navicon-round ng-click="toggleLeft()"></button>
 		<h1 class="title">Cicisasa</h1>
 		<button class="button" data-ng-click="refresh()">
 			<i class="icon ion-refresh"></i>
 		</button>
-	  <!--
-	  <div class="buttons">
-		<button class="button">Right Button</button>
-	  </div>
-	  -->
 	</ion-header-bar>
 	<ion-content>
 		<div class="card list" data-ng-repeat="a in artworks | orderBy:['-timestamp']">
@@ -41,5 +32,14 @@
 			</div>
 		</div>
 	</ion-content>
+	<ion-side-menus>
+		<ion-side-menu-content>
+			<ion-list>
+				<ion-item>Home</ion-item>
+			</ion-list>
+		</ion-side-menu-content>
+	</ion-side-menus>
+
+		
   </body>
 </html>
