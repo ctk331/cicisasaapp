@@ -3,8 +3,10 @@ var App = angular.module("cicisasa", ["ionic"]);
 App.service("activity", ["$http", "$log", activity]);
 
 App.controller("AppCtrl", ["$scope", "$ionicSideMenuDelegate" , "activity", "$log", AppCtrl]);
+//App.controller("AppCtrl", ["$scope", "activity", "$log", AppCtrl]);
 
 function AppCtrl($scope, $ionicSideMenuDelegate, activity, $log) {
+//function AppCtrl($scope, activity, $log) {
 	$scope.artworks = [];
 
 	$scope.refresh = function() {
@@ -25,6 +27,7 @@ function activity($http, $log){
 			console.log('Success', JSON.stringify(resp.data.boardactivity));
 			//var res = JSON.parse(resp.data);
 			$scope.artworks = resp.data.boardactivity;
+			$scope.$broadcast("scroll.refreshComplete");
 		}, function(err) {
 			console.error('ERR', err);
 			// err.status will contain the status code
